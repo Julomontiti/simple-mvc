@@ -1,17 +1,16 @@
 {
-    "name": "wilder13/composer-quete",
+    "name": "wilder13/simple-mvc",
     "authors": [
         {
             "name": "julomontiti",
             "email": "julomontiti@gmail.com"
         }
     ],
-    "require": {
-        "ehime/hello-world": "^1.0"
-    },
+    "require": {},
+
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "": "src/"
         }
     }
 }

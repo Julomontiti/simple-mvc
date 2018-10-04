@@ -5,18 +5,10 @@
  * Date: 01/10/18
  * Time: 18:41
  */
+require __DIR__ . '/../vendor/autoload.php';
+
+$index = new \Controller\ItemController();
+
+echo $index->index();
 
 
-use App\Wcs\Hello;
-use HelloWorld\SayHello;
-
-require '../vendor/autoload.php';
-
-
-$julo = new Hello();
-
-echo $julo->talk();
-
-$juju = new SayHello();
-
-echo $juju->world();
