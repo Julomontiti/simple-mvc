@@ -1,7 +1,13 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: wilder13
- * Date: 09/10/18
- * Time: 16:26
- */
+<!DOCTYPE html>
+<html>
+<head> ... </head>
+<body>
+<main>
+    <h1>Category <?= $category['name'] ?></h1>
+    <ul>
+        <li>Id : <?= $category['id'] ?></li>
+    </ul>
+    <a href='index.php?route=categories'>Back to list</a>
+</main>
+</body>
+</html>

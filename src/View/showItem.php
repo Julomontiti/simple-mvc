@@ -1,7 +1,14 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: wilder13
- * Date: 09/10/18
- * Time: 14:15
- */
+
+<!DOCTYPE html>
+<html>
+<head> ... </head>
+<body>
+   <main>
+    <h1>Item <?= $item['title'] ?></h1>
+<ul>
+    <li>Id : <?= $item['id'] ?></li>
+</ul>
+<a href='index.php?route=items'>Back to list</a>
+</main>
+</body>
+</html>
