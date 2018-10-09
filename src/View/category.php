@@ -6,7 +6,7 @@
     <h1>Items</h1>
     <ul>
         <?php foreach ($categories as $category) : ?>
-            <li><?= $category['title'] ?></li>
+            <li><?= $category['name'] ?></li>
         <?php endforeach ?>
     </ul>
 </section>

@@ -7,7 +7,7 @@
     <ul>
         <li>Id : <?= $category['id'] ?></li>
     </ul>
-    <a href='index.php?route=categories'>Back to list</a>
+    <a href='/'>Back to list</a>
 </main>
 </body>
 </html>
