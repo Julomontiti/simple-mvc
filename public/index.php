@@ -6,9 +6,7 @@
  * Time: 18:41
  */
 require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../app/db.php';
 
-$index = new \Controller\ItemController();
-
-echo $index->index();
-
+require __DIR__ . '/../app/dispatcher.php';
 
