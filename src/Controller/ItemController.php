@@ -18,7 +18,12 @@ class ItemController
 
 
 
-    public function index()
+    /**
+ * @return string
+* @throws \Twig_Error_Loader
+* @throws \Twig_Error_Runtime
+* @throws \Twig_Error_Syntax
+*/public function index()
     {
 
         $itemManager = new ItemManager();
@@ -27,12 +32,18 @@ class ItemController
 
         return $this->twig->render('item.html.twig', ['items' => $items]);    }
 
-    public function show(int $id)
+    /**
+* @param int $id
+ * @return string
+* @throws \Twig_Error_Loader
+* @throws \Twig_Error_Runtime
+* @throws \Twig_Error_Syntax
+*/public function show(int $id)
     {
         $itemManager = new ItemManager();
         $item = $itemManager->selectOneItem($id);
 
-        return $this->twig->render('item.html.twig', ['item' => $item]);    }
+        return $this->twig->render('showItem.html.twig', ['item' => $item]);
     }
 
 }
