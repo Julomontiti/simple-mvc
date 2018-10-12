@@ -1,8 +1,7 @@
 
-<!DOCTYPE html>
-<html>
-<head> ... </head>
-<body>
+{% extends layout.html.twig %}
+
+{% block content %}
    <main>
     <h1>Item <?= $item['title'] ?></h1>
 <ul>
@@ -10,5 +9,4 @@
 </ul>
 <a href='/'>Back to list</a>
 </main>
-</body>
-</html>
+{% endblock %}
